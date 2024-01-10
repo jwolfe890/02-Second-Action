@@ -9,4 +9,6 @@ jobs:
     steps:
       - name: Get code
         uses: actions/checkout@v3
+      - name: Run tests
+        run: npm test
       # Additional steps for testing, building, etc., can be added here
