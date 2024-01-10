@@ -1,9 +1,12 @@
 name: Test Project
 on:
   push:
-  jobs:
-    test:
-      runs-on: ubuntu-latest
-      steps:
-        - name: Get code
-          uses: actions/checkout@v3
+    branches: [main]  # Change 'main' to your branch name if needed
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get code
+        uses: actions/checkout@v3
+      # Additional steps for testing, building, etc., can be added here
