@@ -1,6 +1,5 @@
 name: Test Project
-on:
-  push:
+on: [push, workflow_dispatch]
     branches: [main]  # Change 'main' to your branch name if needed
 
 jobs:
