@@ -1,6 +1,8 @@
 name: Test Project
-on: [push, workflow_dispatch]
-    branches: [main]  # Change 'main' to your branch name if needed
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:  # Change 'main' to your branch name if needed
 
 jobs:
   test:
